@@ -1,0 +1,133 @@
+* {
+	user-select: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: bisque;
+	font-family: "Roboto", sans-serif;
+}
+
+.card {
+	display: flex;
+	background-color: white;
+	border-radius: 1rem;
+	overflow: hidden;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+	max-width: 600px;
+	width: 100%;
+}
+
+.image {
+	width: 50%;
+}
+
+.image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.details {
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+	width: 50%;
+	gap: 2rem;
+	justify-content: center;
+}
+
+#category {
+	letter-spacing: 0.3rem;
+	font-family: "Roboto", serif;
+	font-weight: 900;
+	font-style: normal;
+	color: rgb(150, 150, 150);
+}
+
+h1 {
+	font-family: "Libre Baskerville", serif;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+#para {
+	color: rgb(97, 96, 96);
+	line-height: 1.4rem;
+	margin-bottom: 1rem;
+	font-family: "Roboto", serif;
+	letter-spacing: 0.1rem;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1rem;
+	margin-top: auto;
+}
+
+.price {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+#strikethrough {
+	text-decoration: line-through;
+	color: rgb(99, 99, 99);
+}
+
+#off {
+	color: rgb(43, 132, 43);
+	font-weight: 900;
+	font-size: xx-large;
+}
+
+button {
+	background-color: rgb(43, 132, 43);
+	color: white;
+	border: none;
+	padding: 1rem 2rem;
+	border-radius: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	cursor: pointer;
+	font-size: 1rem;
+	transition: background-color 0.2s;
+	width: 100%;
+}
+
+button:hover {
+	background-color: rgb(34, 112, 34);
+}
+
+@media screen and (max-width: 768px) {
+	.card {
+		flex-direction: column;
+		max-width: 50%;
+	}
+	body {
+		padding-left: 0.5rem;
+        padding-right: 0.5rem;
+	}
+
+    .image img {
+		content: url('./images/image-product-mobile.jpg');
+	}
+
+	.image,
+	.details {
+		width: 100%;
+	}
+}
