@@ -115,12 +115,12 @@ button:hover {
 @media screen and (max-width: 768px) {
 	.card {
 		flex-direction: column;
-		max-width: 50%;
+		max-width: 70%;
 	}
-	body {
+	/* body {
 		padding-left: 0.5rem;
         padding-right: 0.5rem;
-	}
+	} */
 
     .image img {
 		content: url('./images/image-product-mobile.jpg');
